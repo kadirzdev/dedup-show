@@ -118,6 +118,17 @@ function App() {
           </div>
         ))}
       </div>
+      <div className="fixed bottom-0 left-0 right-0 flex justify-center py-6">
+        <a
+          href="https://dualstack.edp-de-front-pn338w2nrwtk-324045311.eu-west-1.elb.amazonaws.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-12 py-6 text-2xl font-bold rounded-lg hover:opacity-90 transition-opacity"
+          style={{ backgroundColor: '#0076CB', color: '#FFFFFF', border: '15px solid white' }}
+        >
+          Enter the Enterprise DeDup
+        </a>
+      </div>
     </div>
   );
 }
