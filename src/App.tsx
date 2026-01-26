@@ -67,9 +67,12 @@ function App() {
 
   return (
     <div className="w-full max-w-full mx-auto px-2 flex flex-col items-center mb-25">
-      <h1 className="text-4xl font-bold text-center mb-8">
+      <h1 className="text-4xl font-bold text-center mb-2">
         Enterprise Dedup Interactive Selection
       </h1>
+      <p className="text-sm text-gray-300 text-center mb-6">
+        <span className='text-red-500'>*</span>Images are AI-generated for demonstration purposes only.
+      </p>
       <div className="grid grid-cols-5 gap-2 w-full">
         {images.map((src, index) => (
           <div key={index}>
@@ -79,8 +82,10 @@ function App() {
               alt=""
               onClick={() => handleImageClick(index)}
               style={{
-                border: isSelected(index) ? '10px solid green' : '10px solid transparent',
-                boxSizing: 'border-box',
+                border: isSelected(index)
+                  ? "10px solid green"
+                  : "10px solid transparent",
+                boxSizing: "border-box",
               }}
             />
           </div>
@@ -88,13 +93,17 @@ function App() {
       </div>
       <div className="fixed bottom-0 left-0 right-0 flex justify-center py-6">
         <a
-          href="https://dualstack.edp-de-front-pn338w2nrwtk-324045311.eu-west-1.elb.amazonaws.com/login"
+          href="https://dualstack.edp-de-front-pn338w2nrwtk-324045311.eu-west-1.elb.amazonaws.com/country/India"
           target="_blank"
           rel="noopener noreferrer"
           className="px-12 py-6 text-2xl font-bold rounded-lg hover:opacity-90 transition-opacity"
-          style={{ backgroundColor: '#0076CB', color: '#FFFFFF', border: '15px solid white' }}
+          style={{
+            backgroundColor: "#0076CB",
+            color: "#FFFFFF",
+            border: "15px solid white",
+          }}
         >
-          Enter the Enterprise DeDup
+          Can you spot duplicate faces?
         </a>
       </div>
     </div>
