@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className="w-full max-w-full mx-auto px-2 flex flex-col items-center mb-25">
-      <h1 className="text-4xl font-bold text-center mb-2">
+      <h1 className="!text-3xl font-bold text-center mb-2">
         Can you spot the duplicate faces?
       </h1>
       <p className="text-sm text-gray-300 text-center mb-6">
